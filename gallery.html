@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veseli Televizori</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="outer-grid">
+      <header>
+        <div class="left-header">
+          <i class="fas fa-bars" onclick="toggleNav()"></i>
+          <h2 class="logo">Veseli Televizori</h2>
+        </div>
+      </header>
+      <nav class="hide-nav">
+        <div class="nav-link">
+          <a href="./index.html">
+          <i class="fas fa-home"></i>
+          Početna</a>
+        </div>
+        <div class="nav-link">
+          <a href="./gallery.html">
+          <i class="fas fa-images"></i>
+          Galerija</a>
+        </div>
+        <div class="nav-link">
+          <a href="./location.html">
+          <i class="fas fa-compass"></i>
+          Lokacija</a>
+        </div>
+        <div class="nav-link">
+          <a href="./contact.html">
+          <i class="fas fa-id-card"></i>
+          Kontakt</a>
+        </div>
+      </nav>
+      <div class="inner-grid">
+        <main>
+          <article>
+            <h1>Galerija</h1>
+            <br>
+            <div id="slider" class="nivoSlider">
+                <img src="img/tv1.jpg" data-thumb="img/tv1.jpg" alt="" />
+                <img src="img/tv2.jpg" data-thumb="img/tv2.jpg" alt="" />
+                <img src="img/tv3.jpg" data-thumb="img/tv3.jpg" alt="" title="Volim igrice" />
+                <img src="img/tv4.jpg" data-thumb="img/tv4.jpg" alt="" title="Volim crtaće" />
+                </div>
+          </article>
+        </main>
+        <footer>
+          <p>Veseli Televizori © <span id="year"></span></p>
+        </footer>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+      $(window).load(function() {
+      $('#slider').nivoSlider({
+        controlNav: false,
+        prevText: '',
+        nextText: ''
+      });
+      });
+      </script>
+  </body>
+</html>

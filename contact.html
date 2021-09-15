@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veseli Televizori</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="outer-grid">
+      <header>
+        <div class="left-header">
+          <i class="fas fa-bars" onclick="toggleNav()"></i>
+          <h2 class="logo">Veseli Televizori</h2>
+        </div>
+      </header>
+      <nav class="hide-nav">
+        <div class="nav-link">
+          <a href="./index.html">
+          <i class="fas fa-home"></i>
+          Početna</a>
+        </div>
+        <div class="nav-link">
+          <a href="./gallery.html">
+          <i class="fas fa-images"></i>
+          Galerija</a>
+        </div>
+        <div class="nav-link">
+          <a href="./location.html">
+          <i class="fas fa-compass"></i>
+          Lokacija</a>
+        </div>
+        <div class="nav-link">
+          <a href="./contact.html">
+          <i class="fas fa-id-card"></i>
+          Kontakt</a>
+        </div>
+      </nav>
+      <div class="inner-grid">
+        <main>
+          <article>
+            <h1>Kontakt</h1>
+            <br>
+            <div>
+              <div id="prijava">
+              <form onsubmit="return validacija()">
+                  <label>Ime i prezime:</label>
+                      <input autocomplite="off" class="forma" name="ime" placeholder="Ime i prezime" required type="text">
+                      <label>Broj telefona:</label>
+                      <input autocomplite="off" class="forma" max="9999999999" name="telefon" placeholder="Broj telefona" required type="number">
+                      <label>E-mail adresa:</label>
+                      <input autocomplite="off" class="forma" name="mail" placeholder="E-mail" required type="email">
+                      <label>Interesuje me:</label>
+                      <br>
+                      <div>
+                        <input style="margin-right: 10px;" type="radio" id="kupovina" name="tv" value="kupovina"
+                               checked>
+                        <label for="kupovina" style="font-weight: normal;">Kupovina televizora</label>
+                      </div>
+                      <div>
+                        <input style="margin-right: 10px;" type="radio" id="prodaja" name="tv" value="prodaja">
+                        <label for="prodaja" style="font-weight: normal;">Prodaja Televizora</label>
+                      </div>
+                      <label>Model televizora</label>
+                      <input autocomplite="off" class="forma" name="model" placeholder="Model televizora" required type="text">
+                  <input class="btn" name="submit" onclick="validacija()" type="submit" value="Registruj se">
+                  <input class="btn" namer="reset" onclick="resetujPolja()" type="reset" value="Obriši podatke">
+          </form>
+          </div>
+      </div>
+          </article>
+        </main>
+        <footer>
+          <p>Veseli Televizori © <span id="year"></span></p>
+        </footer>
+      </div>
+    </div>
+    <script src="js/form.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veseli Televizori</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="outer-grid">
+      <header>
+        <div class="left-header">
+          <i class="fas fa-bars" onclick="toggleNav()"></i>
+          <h2 class="logo">Veseli Televizori</h2>
+        </div>
+      </header>
+      <nav class="hide-nav">
+        <div class="nav-link">
+          <a href="./index.html">
+          <i class="fas fa-home"></i>
+          Početna</a>
+        </div>
+        <div class="nav-link">
+          <a href="./gallery.html">
+          <i class="fas fa-images"></i>
+          Galerija</a>
+        </div>
+        <div class="nav-link">
+          <a href="./location.html">
+          <i class="fas fa-compass"></i>
+          Lokacija</a>
+        </div>
+        <div class="nav-link">
+          <a href="./contact.html">
+          <i class="fas fa-id-card"></i>
+          Kontakt</a>
+        </div>
+      </nav>
+      <div class="inner-grid">
+        <main>
+          <article>
+            <h1>🖥️ Veseli Televizori</h1>
+            <h2>  Dobro došli</h2>
+            <p>
+            Mi smo Veseli Televizori. Naše televizore može svako da priušti, za svakoga ponešto. Zato samo slobodno i istražite naš sajt
+            jer smo tu za Vas.  
+            </p>
+            <p>
+              Ako se pitate zašto mi? Pa zato što imamo Jokića na slici, a ko još ima Jokića a da nije platio kopirajt?  
+            </p>
+            <p>
+              Znamo da to nije dovoljan razlog, glavni razlog su naše konkuretske cene i veliki broj zadovoljnih kupaca.
+            </p>
+            <div class="collage">
+              <img
+                class="collage-1"
+                src="img/main/tv-general.jpg"
+              />
+              <img
+                class="collage-2"
+                src="img/main/tv-nba.jpg"
+              />
+              <img
+                class="collage-3"
+                src="img/main/tv-netflix.jpg"
+              />
+            </div>
+          </article>
+        </main>
+        <footer>
+          <p>Veseli Televizori © <span id="year"></span></p>
+        </footer>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
